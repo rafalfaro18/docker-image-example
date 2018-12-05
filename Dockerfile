@@ -8,4 +8,4 @@ COPY docker-entrypoint.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 #runs when the image starts:
 ENTRYPOINT [ "docker-entrypoint.sh" ]
-CMD ["top"]
+CMD ["/bin/bash"]
